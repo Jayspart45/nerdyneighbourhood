@@ -87,3 +87,9 @@ h6 {
   font-weight: inherit;
   line-height: inherit;
 }
+h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  line-height:1;
+  margin-bottom: 20px;
+}

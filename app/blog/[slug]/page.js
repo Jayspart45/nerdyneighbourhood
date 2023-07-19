@@ -31,7 +31,6 @@ export default function BlogPage({ params }) {
     );
   }, []);
 
-
   return (
     <>
       <Head>
@@ -42,15 +41,18 @@ export default function BlogPage({ params }) {
         />
       </Head>
       <Navbar />
-      <div className="container mx-auto px-4 py-8">
-        <div className="bg-white rounded-lg shadow-lg p-6">
+      <div className="container max-w-5xl mx-auto px-4 py-8 mt-14">
+        <div className="bg-gray-900 rounded-lg shadow-lg p-6">
           <img
             src={posts?.image}
             alt={posts?.title}
             className="w-full h-auto mb-4"
           />
-          <h1 className="text-3xl font-bold mb-2">{posts?.title}</h1>
-          <p className="text-gray-700" dangerouslySetInnerHTML={{__html:posts?.Content}}></p>
+          {/* <h1 className="text-5xl font-extrabold mb-4 text-gray-100">{posts?.title}</h1> */}
+          <p
+            className="text-gray-100"
+            dangerouslySetInnerHTML={{ __html: posts?.Content }}
+          ></p>
         </div>
       </div>
     </>
